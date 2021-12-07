@@ -1,17 +1,17 @@
 <template>
-  <div class="app-menubar">
-    <div class="app-menubar-left">
-      <h1><b>Booker</b></h1>
-      <div class="element"><router-link to="/">Search</router-link></div>
-      <div class="element"><router-link to="/publish">Publish</router-link></div>
+  <div class="one">
+    <div class="app-menubar">
+      <div class="app-menubar-left">
+        <h1><b>Booker</b></h1>
+        <div class="element"><router-link to="/">Search</router-link></div>
+        <div class="element"><router-link to="/publish">Publish</router-link></div>
+      </div>
+      <div class="app-menubar-right">
+        <div class="element"><router-link to="/help">Help</router-link></div>
+      </div>
     </div>
-    <div class="app-menubar-right">
-      <div class="element"><router-link to="/help">Help</router-link></div>
-    </div>
+    <router-view/>
   </div>
-
-  <router-view/>
-
 </template>
 
 <script>
