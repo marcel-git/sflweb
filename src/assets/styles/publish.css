@@ -1,0 +1,23 @@
+.app-publish{
+    flex: 1;
+    padding: 1vw;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.post{
+    background: var(--content);
+    color: var(--primaryText);
+    font-family: var(--textFont);
+    margin: 1vw;
+    padding: 1vw;
+    width: 40vw;
+    border-radius: 20px;
+    text-align: left;
+    box-shadow: 0 14px 17px -6px var(--content);
+}
+
+.post:hover{
+    outline: solid 3px var(--primaryColor);
+}

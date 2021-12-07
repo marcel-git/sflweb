@@ -1,0 +1,50 @@
+h1 {
+    color: var(--headerColor);
+    font-family: var(--headerFont);
+    font-size: 250%;
+}
+
+input{
+    width: 75vh;
+    height: 5vh;
+    border-radius: 20px;
+    padding-left: 0.5vw;
+    font-size: 1vw;
+}
+
+button {
+    margin-top: 1vw;
+    font-family: var(--textFont);
+    font-size: 101%;
+    background: var(--primaryColor);
+    width: 10vw;
+    height: 3vw;
+    border-radius: 20px;
+    box-shadow: 0px 0px 0px transparent;
+    border: 0px solid transparent;
+    text-shadow: 0px 0px 0px transparent;
+}
+
+.entry{
+    background: var(--content);
+    color: var(--primaryText);
+    font-family: var(--textFont);
+    margin: 1vw;
+    padding: 1vw;
+    width: 40vw;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 14px 17px -6px var(--content);
+}
+
+.entry:hover{
+    outline: solid 3px var(--primaryColor);
+}
+
+.app-database{
+    flex: 1;
+    padding: 1vw;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}

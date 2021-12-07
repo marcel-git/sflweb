@@ -1,28 +1,33 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="app-menubar">
+    <div class="app-menubar-left">
+      <h1><b>Booker</b></h1>
+      <div class="element"><router-link to="/">Search</router-link></div>
+      <div class="element"><router-link to="/publish">Publish</router-link></div>
+    </div>
+    <div class="app-menubar-right">
+      <div class="element"><router-link to="/help">Help</router-link></div>
+    </div>
   </div>
+
+  <router-view/>
+
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  @import "assets/styles/main.css";
+  .app-database,.app-publish, .app-profile{
+    background-image: url("../public/background.jpg");
+  }
 </style>
